@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <script>
+            multiplication=()=>{
+                var value1= parseFloat(document.formm.v1.value);
+
+                if(isNaN(value1))
+                    value1 = 0.0;
+
+                var value2 = parseFloat(document.formm.v2.value);
+                if(isNaN(value2))
+                value2=0.0;
+
+                var result=value1*value2;
+
+                alert("The result of"+value1+"*"+value2+"="+result);
+
+
+            }
+
+            subtraction=()=>{
+                 var value1= parseFloat(document.formm.v1.value);
+
+                if(isNaN(value1))
+                    value1 = 0.0;
+
+                var value2 = parseFloat(document.formm.v2.value);
+                if(isNaN(value2))
+                value2=0.0;
+
+                var result=value1-value2;
+
+                alert("The result of"+value1+"-"+value2+"="+result);
+            }
+
+
+                division=()=>{
+
+                    var value1 = parseFloat(document.formm.v1.value);
+
+                    if(isNaN(value1))
+                    value1=0.0;
+
+                    var value2= parseFloat(document.formm.v2.value);
+
+                    if(isNaN(value2))
+                    value2=0.0;
+
+                    var result = value1/value2;
+
+                    alert("The result of"+value1+"/"+value2+"="+result);
+                }
+
+
+                adding=()=>{
+                    var value1 = parseFloat(document.formm.v1.value);
+                    if(isNaN(value1))
+                    value1=0.0;
+
+
+                    var value2= parseFloat(document.formm.v2.value);
+                    if(isNaN(value2))
+                    value2=0.0;
+
+
+                    var result = value1+value2;
+
+                    document.formm.outp.value= result;
+                }
+
+
+                
+            
+        </script>
+    </p>
+
+    <form action="" name="formm">
+
+        <h1>Please enter a value with keyboard</h1>
+      
+        <div>
+            <pre>
+            The first value : <input type="text" name="v1" size="11">
+            <br/>
+            The second value : <input type="text" name="v2" size="11">
+            </pre>
+        </div>
+
+        <input type="button" value="Mulitply" onclick="multiplication()">
+        <input type="button" value="Substract" onclick="subtraction()">
+        <input type="button" value="Divide" onclick="division()">
+        <input type="button" value="adding" onclick="adding()">
+        <br/>
+        <input type="text" name="outp" id="">
+        <input type="reset" value="reset">
+    </form>
+    
+</body>
+</html>

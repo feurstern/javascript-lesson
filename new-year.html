@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Happy New Year</title>
+    <style>
+        body {
+            background-color:red;
+        }
+        h1 {
+            color: darkblue;    
+            margin-top: 250px;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="messageLabel"></h1>
+ 
+<script>
+var message = "Happy New Year 2022, wish you best! By Rio";
+var msgCount = 0;
+var blinkCount = 0;
+var blinkFlg = 0;
+var timer1, timer2;
+var messageLabel = document.getElementById("messageLabel");
+ 
+function textFunc() {
+     
+    messageLabel.innerHTML = message.substring(0, msgCount);
+     
+    if (msgCount == message.length) {
+        
+        clearInterval(timer1);
+         
+        timer2 = setInterval("blinkFunc()", 200);
+         
+    } else {
+        msgCount++;
+    }     
+}
+ 
+function blinkFunc() {   
+    
+    if (blinkCount < 6) {
+         
+        if (blinkFlg == 0) {
+            messageLabel.innerHTML = message;
+            blinkFlg = 1;
+            blinkCount++;
+             
+        } else {
+            messageLabel.innerHTML = "";
+            blinkFlg = 0;
+        }
+         
+    } else {
+        
+        clearInterval(timer2);
+    }
+
+} 
+timer1 = setInterval("textFunc()", 150);
+</script>
+</body>
+</html>

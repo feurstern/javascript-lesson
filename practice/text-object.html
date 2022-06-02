@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       function showData(){
+            var userName = (document.formm.username.value);
+            var userAddress = (document.formm.useraddress.value);
+            var userAge = (document.formm.useage.value);
+            var userEmail = (document.formm.usermail.value);
+
+            document.formm.outname.value = userName;
+            document.formm.outaddress.value = userAddress;
+            document.formm.outage.value = userAge;
+            document.formm.outmail.value = userEmail;   
+        }
+    </script>
+    <form  name="formm">
+
+        <div>
+            <h2>User Data Information</h2>
+            <pre>
+
+            Name : <input type="text" name="username" size="11">
+            <br>
+            Address : <input type="text" name="useraddresss" size="25">
+            <br>
+            Age : <input type="text" name="useage" size="11">
+            <br>
+            Email: <input type="email" name="usermail" id="15">
+            <br>
+            <input type="button" value="input" onclick="showData()">
+            <input type="reset" value="reset">
+        </pre>
+
+
+        </div>
+
+        <div>
+            <h2>OUTPUT</h2>
+            <pre>
+            Name: <input type="text" name="outname" id="">
+            <br>
+            Address : <input type="text" name="outaddress" id="">
+            <br>
+            Age : <input type="text" name="outage" id="">
+            <br>
+            Email : <input type="text" name="outmail" id="">
+        </pre>
+
+        </div>
+    </form>
+    
+</body>
+</html>
