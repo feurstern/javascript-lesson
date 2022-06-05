@@ -25,3 +25,7 @@ const user = new userProfile("Rio",23, "Bekasi West Java");
 
 
 user.info();
+
+const customer1 = new customer("Wafa ", 18, "Medan Satria, North Bekasi");
+
+customer1.info();
