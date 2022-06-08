@@ -41,8 +41,25 @@ class customer extends userProfile{
         console.log(`You are ${this.type}`);
     }
     
+    
 }
 
+
+class employment extends userProfile{
+    constructor(name,age,address,positon, salary)
+    {
+        super(name,age,address)
+        this.positon= positon;
+        this.salary = salary;
+        
+    }
+
+    info(){
+        this.greet();
+        console.log(`You are managed to ${this.positon} department`);
+        console.log(`The salary of the ${this.positon} is ${this.salary}`);
+    }
+}
 const user = new userProfile("M Rio Kurnaiwan", 33, "Jl. Pulo sirih utara 4 blok dd 110", "Myhusbad");
 user.info();
 user.ageCalulcation();
@@ -50,4 +67,10 @@ user.ageCalulcation();
 const customer1 = new customer("Wafa Zabira", 18, "Medan Satria", "my wife");
 customer1.info();
 user.ageCalulcation();
+
+const employeer = new employment("Rio",24,"Jl. Pulo sirih utara 4", "Programmer", 9000000);
+
+employeer.info();
+
+
 
