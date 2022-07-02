@@ -70,7 +70,7 @@ user.ageCalulcation();
 
 const employeer = new employment("Rio",24,"Jl. Pulo sirih utara 4", "Programmer", 9000000);
 
-employeer.info();
+employeer.info();   
 
 
 
