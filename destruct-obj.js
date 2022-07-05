@@ -24,3 +24,4 @@ const favouriteFoods=["Onion", "Satay"];
 const [firstFavourite, secondFavourite, thirdFavourite ='Salad'] = favouriteFoods;
 
 console.log(firstFavourite, secondFavourite, thirdFavourite)
+
