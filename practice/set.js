@@ -18,6 +18,6 @@ let {name} = restaurant;
 let {"favourite drink" : favouriteDrink} =  restaurant;
 
 console.log(name);
-console.log(favouriteDrink)
+console.log(favouriteDrink);
 
    
