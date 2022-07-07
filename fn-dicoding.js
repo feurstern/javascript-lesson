@@ -39,3 +39,5 @@ function minMax(arrayOfNumbers) {
 }
 
 minMax([8, -6, 0, 9, 40, 2, 23, 50, 2, -3, -15, 15, -23, 7  ,1]);   
+
+  
