@@ -6,7 +6,7 @@
  *      - age: int
  *      - isMammal: boolean
  *    - Memiliki constructor untuk menginisialisasi properti:
- *      - name
+ *      - namee
  *      - age
  *      - isMammal
  * 2. Buatlah class bernama Rabbit dengan ketentuan:
