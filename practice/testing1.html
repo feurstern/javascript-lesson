@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+        userGreeting=()=>{
+            alert("Welcome to my webiste!");
+            prompt("What's your name!")
+        }
+
+        function showData(){
+            let nis_1 = (document.students.NIS.value);
+            let username = (document.students.name.value);
+            let userGender = (document.students.gender.value);
+            let userReligion = (document.students.religion.value);
+            let usermajor = (document.students.major.value);
+            let userstatus = (document.students.status.value);
+            let usercomments = (document.students.comments.value)
+
+
+            document.students.output_nis.value = nis_1;
+            document.students.output_username.value = username;
+            document.students.ouputgender.value = userGender;
+            document.students.outputreligion.value = userReligion;
+            document.students.outputmajor.value = usermajor;
+            document.students.outputstatus.value = userstatus;
+            document.students.outputcomments.value = usercomments;
+
+
+        }
+    </script>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: skyblue;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+
+
+        }
+
+        main{
+            background-color: aquamarine;
+            width: 1000px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body onload="user">
+    <header>
+        <h1>Welcome to Computer University</h1>
+        <h2>Student Data Master</h2>
+        <br>
+    </header>
+
+    <main>
+        <h2>Insert new students data:</h2>
+
+        <form name="students" action="">
+            <pre>
+                <p>NIS      : <input type="text" name="NIS" id="NIS"></p>
+                <p>Name     : <input type="text" name="name" id="name"></p>
+                <p>Gender   : <select name="gender" id="gener">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="neutral">Rather not say!</option>
+                </select></p>
+                <p>Religion : <select name="religion" id="religion">
+                    <option value="moslem">Moslem</option>
+                    <option value="christian">Christian</option>
+                    <option value="atheism">Atheism</option>
+                </select></p>
+                <p>Major    : <select name="major" id="major">
+                    <option value="literature">Litelature</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="management">Mangement</option>
+                </select></p>
+                <p>Status <input type="radio" name="status" id="">Married</p>
+                <p>Comments : <textarea name="comments" id="" cols="50" rows="10">
+                    Feel free to leave a message for us here ...                </textarea></p>
+
+                <input type="button" value="send" onclick="showData()">
+
+                <pre>
+                    NIS      : <input type="text" name="output_nis">
+                    Name     : <input type="text" name="output_username" id="">
+                    Gender   : <input type="text" name="ouputgender" id="">
+                    Status   : <input type="text" name="outputstatus" id="">
+                    Religion : <input type="text" name="outputreligion" id="">
+                    Major    : <input type="text" name="outputmajor" id="">
+                    <p>Comments : <textarea name="outputcomments" id="" cols="50" rows="10">
+
+
+                </pre>
+            
+
+            </pre>
+            
+        </form>
+    </main>
+   
+</body>
+</html>
