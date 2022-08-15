@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Check box </title>
+    <style>
+        header {
+            text-align: center;
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+<script src="./fn-travel.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h2>Welcome to Hatsune Miku Travel</h2>
+    </header>
+
+    <form name="ffrom">
+        <table border="1" align="center" width="70%">
+            <tr>
+                <td width="100%" colspan="2">
+                    <h2>Ticket Program</h2>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <pre>
+                        Name        : <input type="text" size="25" name="username">
+                        Destination : <select name="userdestination" id="">
+                            <option value="jp">Tokyo, Narita</option>
+                            <option value="tr">Turkey, Ankara</option>
+                            <option value="nz">New Zealand, Wellington </option>
+                            <option value="kr">South Korea, Seoul</option>
+                            <option value="de">Germany, Berlin</option>
+                        </select>
+
+                        Qty         : <input type="text" name="userqty">
+                        Email       : <input type="email" name="useremail">
+                        Member      : <input type="checkbox" name="usermember" id=""> Yes
+                        
+                    </pre>
+
+                </td>
+
+
+                <td width="50%">
+                    <pre>
+                        Cost of Ticket  : <input type="text" name="outputticket">
+                        Total           : <input type="text" name="outputtotal">
+                        Discount        : <input type="text" name="outputdiscount">
+                        Final Cost      : <input type="text" name="outfinalcost">
+                    </pre>
+
+                </td>
+
+
+            </tr>
+
+
+            <tr>
+                <td widht="100%" colspan="2">
+                    <center>
+                        <input type="button" value="calculate" onclick="calculation()">
+                        <input type="reset" value="Reset">
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

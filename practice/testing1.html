@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <script>
-        userGreeting=()=>{
+         const userGreeting=()=>{
             alert("Welcome to my webiste!");
             prompt("What's your name!")
+        }
+
+        const radiobox =(form) =>{
+
+            var desc = ""
+            if(form.status.checked == true){
+                desc = "Married";
+
+
+            }
+            else{
+                desc = "Single";
+            }
+            alert(`you are ${desc}!`);
+
         }
 
         function showData(){
@@ -19,6 +34,7 @@
             let usermajor = (document.students.major.value);
             let userstatus = (document.students.status.value);
             let usercomments = (document.students.comments.value)
+            let useremail = (document.students.email.value);
 
 
             document.students.output_nis.value = nis_1;
@@ -28,6 +44,7 @@
             document.students.outputmajor.value = usermajor;
             document.students.outputstatus.value = userstatus;
             document.students.outputcomments.value = usercomments;
+            document.students.outputemail.value = useremail;
 
 
         }
@@ -51,9 +68,10 @@
             width: 1000px;
             border-radius: 10px;
         }
+        
     </style>
 </head>
-<body onload="user">
+<body onload="userGreeting()">
     <header>
         <h1>Welcome to Computer University</h1>
         <h2>Student Data Master</h2>
@@ -82,6 +100,7 @@
                     <option value="computer-science">Computer Science</option>
                     <option value="management">Mangement</option>
                 </select></p>
+                <p>Email <input type="email" name="email" aria-required="required"></p>
                 <p>Status <input type="radio" name="status" id="">Married</p>
                 <p>Comments : <textarea name="comments" id="" cols="50" rows="10">
                     Feel free to leave a message for us here ...                </textarea></p>
@@ -95,7 +114,9 @@
                     Status   : <input type="text" name="outputstatus" id="">
                     Religion : <input type="text" name="outputreligion" id="">
                     Major    : <input type="text" name="outputmajor" id="">
+                    Email : <input type="text" name="outputemail" id="">
                     <p>Comments : <textarea name="outputcomments" id="" cols="50" rows="10">
+                    
 
 
                 </pre>

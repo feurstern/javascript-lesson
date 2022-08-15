@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Conversion</title>
+
+    <script src="./fn-score.js"></script>
+</head>
+<body onload="userGreeting()">
+    <form name="fform">
+        <table border="1" width="70%" align="center">
+            <tr>
+                <td width="100%" align="center" colspan="4"> <h2>Academic Report</h2></td>
+            </tr>
+    
+            <tr>
+                <td width="25%">Quiz        : <input type="text" name="stdquiz" id=""></td>
+                <td width="25%">Assignment  :<input type="text" name="stdassignment"></td>
+                <td width="25%">Mid Test    : <input type="text" name="stdmidtest" id=""></td>
+                <td width="25%">Final Exam  : <input type="text" name="stdfinalexam" id=""></td>
+    
+            </tr>
+    
+            <tr>
+                
+    
+                    <td width="100%" align="center" colspan="4">
+                        <input type="button" value="Calculate" onclick="calc()">
+                        <input type="reset" value="reset">
+                    </td>
+            </tr>
+    
+            <tr>
+                <td widht="100%" colspan="4" align="center">
+                    Final Score: <input type="text" name="outputscore" id="">
+                    Description: <input type="text" name="outputdesc" id="">
+                </td>
+            </tr>
+        </table>
+        
+
+    </form>
+
+    
+</body>
+</html>
