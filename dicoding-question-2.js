@@ -10,7 +10,7 @@ function scoreChecker(score) {
      }
      else if(score>=80){
        result = "Anda mendapatkan nilai B.";
-       console.log(result);
+       console.log(result)  ;
      }
      else if(score>=70){
          result = "Anda mendapatkan nilai C";

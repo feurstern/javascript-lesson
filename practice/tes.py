@@ -1,6 +1,3 @@
-i = 1 
-while True: 
-    if i%3 == 0: 
-        break:
-     print(i) 
-     i+=1
+a, b = 10, 11
+a, b
+print('%x and %X' % (a, b)) 

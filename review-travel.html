@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Booking</title>
+    <script src="./fn-review-travel.js"></script>
+</head>
+<body>
+    <div class="main-header">
+        <h2>Welcome to Online Ticket Booking</h2>
+    </div>
+
+
+    <div class="form">
+        <form name="fform">
+
+            <table border="1" align="center" width="70%">
+                <tr>
+                    <td width="100%" colspan="2" align="center"><h1>Hatsune Miku Live Concert 2022 </h1></td>
+                </tr>
+
+                <tr>
+                    <td width="50% ">
+                        <pre>
+                            Name : <input type="text" require="required" name="username">
+                            Age : <input type="text" name="userage">
+                            Ticket : <select name="userticket" id="">
+                                <option value="regular">regular</option>
+                                <option value="special">special</option>
+                                <option value="vip">VIP</option>
+                            </select>
+                            Qty: <input type="text" name="userqty" id="">
+    
+                        </pre>
+                       
+                    </td>
+
+                    <td width="50%">
+                        <pre>
+                            Cost Of Ticket: <input type="text" name="outticket">
+                            total: <input type="text" name="outsum">
+                            Bonus : <input type="text" name="outbonus" id="">
+
+
+
+
+                        </pre>
+
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td width="100%" colspan="2" align="center">
+                        <input type="button" value="calculate" onclick="calculate()">
+                        <input type="reset" value="reset">
+                    </td>
+
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
