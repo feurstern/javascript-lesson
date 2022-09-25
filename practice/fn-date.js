@@ -5,8 +5,10 @@ let greeting = "";
 let price =5;
 let itemName = prompt("Enter item name");
 let quantity = parseFloat(prompt("Enter the qty of the item:"));
+let userName = prompt("Enter your name:");
 let total = price * quantity;
 let inStock = true;
+
 
 let itemstock = document.getElementById('stock');
 itemstock.textContent = inStock;
@@ -16,6 +18,9 @@ el.textContent = "$" + total;
 
 let item = document.getElementById('item-name');
 item.textContent = itemName;
+
+let usernameShow = document.getElementById('users');
+usernameShow.textContent = userName;
 
 if(hourNow>=18){
     greeting= 'Good evening user!';
