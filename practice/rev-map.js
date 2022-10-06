@@ -22,3 +22,9 @@ console.log(mySchedule);
 
 //to  check the certain of key value from map
 console.log(mySchedule.has("Friday"));
+let isSunday =  mySchedule.has("Sunday");
+console.log(isSunday);
+
+if(mySchedule.has("monday") = true){
+    console.log("Monday is the problem of the day");
+}

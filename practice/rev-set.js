@@ -14,3 +14,13 @@ console.log(userAge);
 // to delete the value of the set using delete() for only one argument
 userAge.delete(25);
 console.log(userAge);
+
+const restaurant ={
+    name: 'Hatsune Miku Fast Food',
+    city:'Tokyo',
+    favoriteDrink : 'Ocha',
+    favoriteFood :'Sushi',
+    isVegan : false
+  };
+
+  console.log(restaurant.name)
