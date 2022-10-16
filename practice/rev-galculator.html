@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galculator V.1.0</title>
+    <style>
+        .main-header {
+            background-color: skyblue;
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+    <script src="./fn-galculator.js"></script>
+</head>
+
+<body onload="usergreeting()">
+
+    <main>
+        <h1 class="main-header">
+            Calculation Program
+        </h1>
+
+        <form name="ffrom">
+            <table border="1px">
+                <thead align="center" width="70%">
+                    <tr>
+                        <td colspan="2" width="100%">
+                            <h1>Galculator</h1>
+                        </td>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td width="50%">
+                        <p>Value 1<input type="text" name="value1" id=""></p>
+                        <p>Value 2 <input type="text" name="value2" id=""></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p> <input type="button" value="add" onclick="addition()">+</p>
+                        <p> <input type="button" value="subract" onclick="subtraction()">-</p>
+                        <p> <input type="button" value="divide" onclick="division()">/</p>
+                        <p> <input type="button" value="multiply" onclick="multiplication()">*</p>                    
+                </tr> 
+
+
+                <tr align="center">
+                    <td>Result : <input type="text" name="result1" id="">
+                    
+                        <input type="reset" value="reset">
+                        </td>
+                   
+                </tr>
+
+
+            </table>
+        </form>
+    </main>
+
+</body>
+
+</html>
