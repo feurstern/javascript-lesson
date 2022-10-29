@@ -47,4 +47,5 @@ const favouriteColour = ["Blue"];
 const[firstColor, secondColor="Red"] = favouriteColour;
 
 console.log(firstColor);
+console.log(secondColor);
 console.log(favouriteColour[0]);

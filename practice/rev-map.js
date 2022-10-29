@@ -25,6 +25,8 @@ console.log(mySchedule.get("Friday"));
 let germanlevel = myLanguage.get("German");
 console.log(germanlevel);
 
+let chineselevel = myLanguage.get("Chinese");
+console.log(chineselevel);
 //to add the value of the map
 mySchedule.set("Saturday", "Learn Game Development");
 console.log(mySchedule);
@@ -43,3 +45,4 @@ if(germanlevel==="Beginner"){
 else{
     console.log("Welcome to fatherland!");
 }
+

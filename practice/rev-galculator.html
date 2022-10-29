@@ -1,68 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galculator V.1.0</title>
     <style>
-        .main-header {
-            background-color: skyblue;
-            color: white;
-            text-align: center;
-
-        }
+      .main-header {
+        background-color: skyblue;
+        color: white;
+        text-align: center;
+      }
     </style>
-    <script src="./fn-galculator.js"></script>
-</head>
+    <script src="./fn-galculator.js">
 
-<body onload="usergreeting()">
+      let value_1 = (document.ffrom.value1.value);
+      let value_2 = (document.ffrom.value2.value);
+      let result = 0;
+      const usergreeting=(name)=>{
+          const date = new Date();
+          const hoursNow =date.getHours();
 
+          if(hoursNow>=6){
+              alert("Welcome to my website!");
+              name= prompt("Enter your name:");
+              alert(`Hi ${name}! Good morning!`);
+
+          }
+          else if(hoursNow>=10){
+              alert("Welcome to my website!");
+              name= prompt("Enter your name:");
+              alert(`Hi ${name}! Good afternoon!`);
+          }
+          else if(hoursNow>=15){
+              alert("Welcome to my website!");
+              name= prompt("Enter your name:");
+              alert(`Hi ${name}! Good evening`);
+          }
+          else if(hoursNow>=18){
+              alert("Welcome to my website!");t
+              name= prompt("Enter your name:");
+              alert(`Hi ${name}! Good night!`);
+          }
+
+
+      }
+
+      const addition=()=>{
+          result=value_1+value_2;
+          document.ffrom.result1.value=eval(result);
+      }
+
+      const subtraction=()=>{
+          result=value_1-value_2;
+          document.ffrom.result1.value=eval(result);
+      }
+
+      const division=()=>{
+          result=value_1/value_2;
+          document.ffrom.result1.value=eval(result);
+      }
+
+
+      const multiplication=()=>{
+          result=value_1*value_2;
+          document.ffrom.result1.value=eval(result);
+      }
+    </script>
+  </head>
+
+  <body onload="usergreeting()">
     <main>
-        <h1 class="main-header">
-            Calculation Program
-        </h1>
+      <h1 class="main-header">Calculation Program</h1>
 
-        <form name="ffrom">
-            <table border="1px">
-                <thead align="center" width="70%">
-                    <tr>
-                        <td colspan="2" width="100%">
-                            <h1>Galculator</h1>
-                        </td>
-                    </tr>
-                </thead>
+      <form name="ffrom">
+        <table border="1px">
+          <thead align="center" width="70%">
+            <tr>
+              <td colspan="2" width="100%">
+                <h1>Galculator</h1>
+              </td>
+            </tr>
+          </thead>
 
-                <tr>
-                    <td width="50%">
-                        <p>Value 1<input type="text" name="value1" id=""></p>
-                        <p>Value 2 <input type="text" name="value2" id=""></p>
-                    </td>
-                </tr>
+          <tr>
+            <td width="50%">
+              <p>Value 1<input type="text" name="value1" id="" /></p>
+              <p>Value 2 <input type="text" name="value2" id="" /></p>
+            </td>
+          </tr>
 
-                <tr>
-                    <td>
-                        <p> <input type="button" value="add" onclick="addition()">+</p>
-                        <p> <input type="button" value="subract" onclick="subtraction()">-</p>
-                        <p> <input type="button" value="divide" onclick="division()">/</p>
-                        <p> <input type="button" value="multiply" onclick="multiplication()">*</p>                    
-                </tr> 
+          <tr>
+            <td>
+              <p><input type="button" value="add" onclick="addition()" />+</p>
+              <p>
+                <input type="button" value="subract" onclick="subtraction()" />-
+              </p>
+              <p>
+                <input type="button" value="divide" onclick="division()" />/
+              </p>
+              <p>
+                <input
+                  type="button"
+                  value="multiply"
+                  onclick="multiplication()"
+                />*
+              </p>
+            </td>
+          </tr>
 
+          <tr align="center">
+            <td>
+              Result : <input type="text" name="result1" id="" />
 
-                <tr align="center">
-                    <td>Result : <input type="text" name="result1" id="">
-                    
-                        <input type="reset" value="reset">
-                        </td>
-                   
-                </tr>
-
-
-            </table>
-        </form>
+              <input type="reset" value="reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
     </main>
-
-</body>
-
+  </body>
 </html>

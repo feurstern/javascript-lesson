@@ -30,7 +30,7 @@ const usergreeting=(name)=>{
   
 
 }
-/*
+
 const addition=()=>{
     result=value_1+value_2;
     document.ffrom.result1.value=eval(result);
@@ -52,5 +52,5 @@ const multiplication=()=>{
     document.ffrom.result1.value=eval(result);
 }
 
-*/
+
 
