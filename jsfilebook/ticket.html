@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hatsune Ticket Order</title>
+    <style>
+        .main-bg{
+            background-color: skyblue;
+            color: text;
+            text-align: center;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-bg">
+        <h2>Welcome to Ticket Online</h2>
+    </div>
+
+    <form action="" name="ticket1">
+        <table border="1" align="center" width="70%">
+            <tr>
+                <td width=100% colspan="2"><h2 align="center">Hatsune Miku Project Diva 2023</h2></td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <pre>
+                        Name        : <input type="text" name="username" size="20">
+                        Location    : <select name="userlocation" id="">
+                            <option value="op1">Tokyo</option>
+                            <option value="op2">Hokkaido</option>
+                            <option value="op3">Osaka</option>
+                            <option value="op4">Beijing</option>
+                        </select>
+                        Qty         : <input type="text" name="userqty" id="">
+                        VIP         : <input type="checkbox" name="vip" id="">Yes
+                    </pre>
+                </td>
+                <td width="50%">
+                    <pre>
+                        
+                            Price     : <input type="text" name="userprice" id="">
+                            Sub total : <input type="text" name="usersubtotal" id="">
+                            Discount  : <input type="text" name="userdiscount" id="">
+                            Total     : <input type="text" name="usertotal" id="">
+                        
+                    </pre>
+                </td>
+
+            </tr>
+            <tr width="100%" colspan="2">
+                <center>
+                    <td align="center">
+                    <input type="button" value="process" onclick="calc()">
+                    
+
+                    </td>
+                    <td align="center">
+                        <input type="reset" value="reset">
+                    </td>
+                    
+                </center>
+
+
+            </tr>
+        </table>
+
+    </form>
+
+    <div id="payment">
+        <h2>Payment:</h2>
+
+    </div>
+
+    <script src="./ticket.js"></script>
+    
+</body>
+</html>

@@ -19,36 +19,23 @@
     <h1 id="messageLabel"></h1>
 
     <script>
-      
-var msgCount = 0;
-var blinkCount = 0;
-var blinkFlg = 0;
-var timer1, timer2;
-var messageLabel = document.getElementById("messageLabel");
-var message = "Happy new year 2023, wish you best from Rioooo!";
+      var msgCount = 0;
+      var blinkCount = 0;
+      var blinkFlg = 0;
+      var timer1, timer2;
+      var messageLabel = document.getElementById("messageLabel");
+      var message = "Happy new year 2023, wish you best from Rioooo!";
 
-function textFunc(){
-    messageLabel.innerHTML= message.substring(0, msgCount);
-    if(msgCount == message.length){
-        clearInterval(timer1);
+      function textFunc() {
+        messageLabel.innerHTML = message.substring(0, msgCount);
+        if (msgCount == message.length) {
+          clearInterval(timer1);
 
-        timer2 = setInterval("blinkFunc()", 200);
-    }
-    else{
-        msgCount++;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
+          timer2 = setInterval("blinkFunc()", 200);
+        } else {
+          msgCount++;
+        }
+      }
 
       function blinkFunc() {
         if (blinkCount < 6) {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple GUI Calculator</title>
+   
+    <style>
+        .main-bg{
+            background-color: skyblue;
+            text-align: center;
+            color:white;
+
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="main-bg">
+        <h1>SIMPLE GUI CALCULATOR BY Riooo</h1>
+    </div>
+
+    <form name="calc">
+        <pre>
+            First Value: <input type="text" name="value_1" id="">
+            Second Value: <input type="text" name="value_2" id="">
+
+            result : <input type="text" name="result1" id="">
+
+        </pre>
+        <input type="button" value="add" onclick="addBtn()">
+        <input type="button" value="subtract" onclick="subBtn()">
+        <input type="button" value="multiply" onclick="multiBtn()">
+        <input type="button" value="divide" onclick="divideBtn()">
+        <input type="reset" value="reset">
+        </form>
+        <script src="./gui-simple-calc.js"></script>
+</body>
+</html>
