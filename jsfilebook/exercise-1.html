@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatsune Miku Travel</title>
+    <style>
+      /*pre {
+        padding-top: 20px;
+        padding-bottom: 25px;
+        */
+    </style>
+ 
+  </head>
+  <body>
+    <form action="" name="travel">
+      <table border="1" align="center" width="70%">
+        <tr>
+          <td width="100%" align="center" colspan="2">
+            <h2>Hatsune Miku Travel</h2>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" align="left">
+            <pre>
+                        Name        : <input type="text" name="username" id="">
+
+                        Destination : <Select name="userdestination">
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Solo">Solo</option>
+                            <option value="Surabaya">Surabaya</option>
+                        </Select>
+
+                        class       : <select name="userclass" id="">
+                            <option value="Executive">Executive</option>
+                            <option value="Business">Business</option>
+                            <option value="Economy">Economy</option>
+                        </select>
+
+                        Qty         : <input type="text" name="userqty" id="" onclick="calc()">
+
+                        Member      : <input type="checkbox" name="usermember" id="">
+    
+                    </pre>
+          </td>
+          <td width="50%">
+            <pre>
+                Price       : <input type="text" name="userprice" id="">
+
+                Sub         : <input type="text" name="usersub" id="">
+
+                Discount    : <input type="text" name="userdiscount" id="">
+
+                Total Price : <input type="text" name="usertotal">
+            </pre>
+          </td>
+        </tr>
+        <tr align="center">
+            <td >
+                
+                    <input type="button" value="Process" onclick="calc()">
+                
+            </td>
+            <td>
+              
+                 <input type="reset" value="reset">
+            </td>
+        </tr>
+      </table>
+    </form>
+
+    <script src="./exercise-1.js"></script>
+  </body>
+</html>

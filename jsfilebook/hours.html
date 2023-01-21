@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours</title>
+</head>
+<body>
+    
+
+    <div id="msg">
+        msg
+    </div>
+    <script>
+        let date = new Date();
+        let hoursNow = date.getHours();
+        let secondNow = date.getSeconds();
+        let minutesNow = date.getMinutes();
+
+        let greeting = document.getElementById("msg");
+        
+        if(hoursNow<=21){
+            greeting.textContent="Good night!"
+
+        }
+        else if(hoursNow<=17){
+            greeting.textContent="Good evening!"
+        }
+
+        else if(hoursNow<=15){
+            greeting.textContent="Good afternoon!"
+        }
+        else if(hoursNow<=19){
+            greeting.textContent="GOod morning!";
+        }
+
+        alert(`${hoursNow} : ${minutesNow}:${secondNow} `);
+    </script>
+</body>
+</html>
