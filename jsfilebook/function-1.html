@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body onload="greetingMessage()">
+    <h2>Function to change the web page of id element</h2>
+    
+    <div id="msg">
+        Welcome to my page!
+    </div>
+
+    
+    <script>
+        const greetingMessage=()=>{
+            let date = new Date();
+            let getHours = date.getHours();
+            if(getHours<23){
+                alert("Hello users! Good night! ");
+
+            }
+            else if(getHours<18){
+                alert("Hello users! Good evening");
+
+            }
+            else if(getHours<15){
+                alert("Hello users! Good afternoon!");
+            }
+            else if(getHours<11){
+                alert("Hello users! Good morning!");
+            }
+         
+        }
+        const updateMessage=()=>{
+            let msgUser = "Welcome to my website, user!"
+
+            let el = document.getElementById('msg');
+            el.textContent=msgUser;
+        }
+        updateMessage();
+    </script>
+</body>
+</html>

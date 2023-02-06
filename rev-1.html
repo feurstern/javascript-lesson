@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+</head>
+<body>
+    <div id="review">
+        <h2>Review Material from Js filebook</h2>
+    </div>
+
+    <div id="change">
+        hello
+
+    </div>
+
+    <div id="flag">
+
+    </div>
+    <div id="ag">
+        your check here
+    </div>
+    <form action="">
+        <button onclick="userGreeting()">click me!</button>
+    </form>
+    <script>
+        let today = new Date();
+        let hoursNow = today.getHours();
+        let message ="hi good night!";
+        let username = prompt("Enter your name:");
+        let userAge = parseInt(prompt("Enter your age:"));
+
+        let ageValidation = document.getElementById("ag");
+
+        if(userAge>=17){
+            
+            ageValidation.textContent=`Hi ${username}! You can access this website!`;
+        }
+        else{
+            ageValidation.textContent=`Hi ${username}! Sorry, you can't accces the website!`;
+
+
+        }
+
+        
+
+        
+        let countryPreferences = ["Germany", "Japan", "New Zealand"];
+
+        let outMessage = document.getElementById('change');
+        outMessage.textContent = message;
+
+        let userFlag= document.getElementById("flag");
+        userFlag.textContent=countryPreferences[0];
+
+        const userGreeting=()=>{
+           document.writeln("<h1>Hello</h1>")
+        }
+
+    </script>
+</body>
+</html>
